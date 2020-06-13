@@ -1,0 +1,32 @@
+@import 'libs/vars'
+@import 'libs/functions'
+@import 'libs/mixins'
+@import 'libs/vendor'
+@import 'libs/breakpoints'
+@import 'libs/html-grid'
+
+.spotlights
+  > section
+    > .image
+      &:before
+        opacity: 0 !important
+
+    > .content
+      > .inner
+        @include vendor('transform', 'none !important')
+        opacity: 1 !important
+
+.wrapper
+  > .inner
+    opacity: 1 !important
+    @include vendor('transform', 'none !important')
+
+#sidebar
+  > .inner
+    opacity: 1 !important
+
+  nav
+    > ul
+      > li
+        @include vendor('transform', 'none !important')
+        opacity: 1 !important

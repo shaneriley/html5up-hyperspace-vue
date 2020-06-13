@@ -1,0 +1,40 @@
+$error_text: #ffe100
+$error_background: #f1f7a1
+
+ul.contact
+  list-style: none
+  padding: 0
+
+  > li
+    padding: 0
+    margin: 1.5em 0 0 0
+
+    &:first-child
+      margin-top: 0
+
+#contact_form
+  .fields
+    margin-top: 0
+  .field
+    position: relative
+    padding: 0 0 3em 1.5em
+    p
+      position: absolute
+      z-index: -1
+      margin: 0
+      font-size: .9rem
+      color: $error_text
+      opacity: 0
+      bottom: 3em
+      transition: opacity .3s ease-in-out, bottom .3s ease-in-out
+  .error
+    label
+      color: $error_text
+    input,
+    textarea
+      color: #b00b00
+      border-color: $error_text
+      background: $error_background
+    p
+      opacity: 1
+      bottom: 0

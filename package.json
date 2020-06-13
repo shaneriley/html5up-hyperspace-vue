@@ -1,0 +1,14 @@
+{
+  "name": "html5up-hyperspace",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "concurrently 'http-server' 'node-sass-chokidar --output ./assets/css --recursive --watch --source-comments ./assets/sass'"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "http-server": "^0.12.3",
+    "node-sass-chokidar": "^1.4.0"
+  }
+}
