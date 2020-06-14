@@ -1,8 +1,9 @@
 {
-  "name": "html5up-hyperspace",
+  "name": "html5up-hyperspace-vue",
+  "description": "HTML5Up's Hyperspace template rewritten as Vue components",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
+  "main": "src/app.js",
+  "license": "CC BY 3.0",
   "scripts": {
     "start": "concurrently 'http-server' 'node-sass-chokidar --output ./assets/css --recursive --watch --source-comments ./assets/sass'"
   },
