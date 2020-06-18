@@ -27,6 +27,7 @@ function main() {
     // Play initial animations on page load.
       window.setTimeout(function() {
         $body.removeClass('is-preload');
+        $('#intro').removeClass('inactive');
       }, 100);
 
     // Sidebar.
