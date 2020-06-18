@@ -4,7 +4,7 @@ export default {
   },
   template: `
     <section>
-      <a :href="post.url" class="image"><img :src="post.image.src" :alt="post.image.alt" data-position="center center" /></a>
+      <a :href="post.url" class="image"><img :src="post.image.url" :alt="post.image.alt" data-position="center center" /></a>
       <div class="content">
         <div class="inner">
           <h2>{{post.title}}</h2>

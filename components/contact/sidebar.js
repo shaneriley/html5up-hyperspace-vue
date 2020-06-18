@@ -1,7 +1,7 @@
 export default {
   props: {
     address: {
-      type: Object,
+      type: Array,
       default() {
         return {
           title: '',
@@ -9,39 +9,24 @@ export default {
         };
       }
     },
-    email: {
-      type: Object,
-      default() {
-        return {
-          title: '',
-          email: '',
-        };
-      }
-    },
-    phone: {
-      type: Object,
-      default() {
-        return {
-          title: '',
-          phone: '',
-        };
-      }
-    },
+    email: String,
+    phone: String,
     socialLinks: Array,
+    title: String,
   },
   template: `
     <ul class="contact">
       <li>
-        <h3>{{address.title}}</h3>
+        <h3>{{title}}</h3>
         <span v-html="address.address"></span>
       </li>
       <li>
-        <h3>{{email.title}}</h3>
-        ` + '<a :href="`mailto:${email.email}`">{{email.email}}</a>' + `
+        <h3>Email</h3>
+        ` + '<a :href="`mailto:${email}`">{{email.replace(/^mailto:/, "")}}</a>' + `
       </li>
       <li>
-        <h3>{{phone.title}}</h3>
-        <span>{{phone.phone}}</span>
+        <h3>Phone</h3>
+        <span>{{phone}}</span>
       </li>
       <li>
         <h3>Social</h3>
